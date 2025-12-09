@@ -5,7 +5,7 @@ import { useState,useEffect } from 'react'
 
 
 const Projects = () => {
-//1:39:58
+
     const [currentpho, setCurrentpho] = useState(0);
     const [cardstoshow, setCardstoshow] = useState(1);
  useEffect(() => {
@@ -58,7 +58,7 @@ return ()=> window.removeEventListener('resize', updateCardsToShow);
                                     <h2 className="text-sm sm:text-base font-semibold text-gray-800">
                                         {project.title}
                                     </h2>
-                                    <p className='text-gray-500 text-xs sm:text-sm'>{project.price} <span></span> {project.location}</p>
+                                    <p className='text-gray-500 text-xs sm:text-sm'>{project.price} <span className='px-1 '></span> {project.location}</p>
                                 </div>
                             </div>
                         </div>
